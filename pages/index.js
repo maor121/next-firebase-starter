@@ -144,9 +144,10 @@ export async function getStaticProps(context) {
   //Note: Do not use client functions here!
 
   //getDoc function is from Admin SDK.
-  const data = await import("@/FS-admin-functions").then(({ getDoc }) =>
-    getDoc()
-  );
+  // const data = await import("@/FS-admin-functions").then(({ getDoc }) =>
+  //   getDoc()
+  // );
+  const data = null;
 
   return {
     props: { data }, // will be passed to the page component as props
